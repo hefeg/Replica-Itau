@@ -1,0 +1,361 @@
+html, body {
+
+	width:100%;
+	height: 100%;
+	padding: 0;
+	margin:0;
+
+}
+
+.no-margin{
+
+	padding: 0;
+	margin: 0;
+
+}
+
+main {
+
+	font-family: 'Arial';
+	font-size: 12px; /*tamanho da fonte*/
+
+}
+
+#topbar {
+
+	width:100%;
+	background-color: #C06E00;
+	height: 30px;
+	color: white; /*cor da fonte*/
+	display: inline-flex; /*flex - permite centralizar verticalmente, inline - permite um ao lado do outro*/
+	justify-content: space-between; /*divide os elementos dentro do container em espaços iguais*/
+	align-items: center; /*centraliza verticalmente os elementos*/
+
+}
+
+#header header {
+
+	width:100%;
+	height: 90px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+
+#header>header>img {
+
+	margin-left: 80px;
+	cursor: pointer;
+
+}
+
+#texto {
+
+	font-size: 16px;
+    display: flex;
+    align-items: flex-start; /*posiciona os elementos no topo do container*/
+    flex-direction: column; /*elementos dentro do container ficam um abaixo do outro*/
+    width: 610px;
+    margin-top: 10px;
+
+}
+
+#texto p {
+
+	color:#ED6F00;
+	font-size: 18px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+
+#busca input {
+
+	border: 2px solid #ED6F00;
+	width: 290px;
+	padding: 5px 0 6px 15px;
+	background-color:#f1f1f1;
+	float: left; /*posiciona o elemento a esquerda ignorando como bloco*/
+	margin-top: 1px;
+	word-spacing: -2px; /*espaçamento das letras*/
+
+}
+
+#busca {
+
+	margin-right: 60px;
+	cursor: pointer; /*tipo de cursor*/
+
+}
+
+
+
+#topMenu, #topMenu2, #topbar>span {
+
+	display: inline-block;/*coloca os elementos um ao lado do outro*/
+	vertical-align: middle; /*fica alinhado ao centro vertical do container - se tiver com inline-block somente.*/
+
+}
+
+#topbar>ul>li {
+
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#topbar>span {
+
+	margin-left: 50px;
+	cursor: pointer;
+
+}
+
+#topMenu {
+
+	align-self: flex-end; /*se alinha verticalmente ao fundo do container*/
+
+}
+
+#topMenu>li {
+
+	background-color: #9F4B00;
+	padding: 5px 6px 6px 6px;
+
+}
+
+#topMenu2 {
+
+	margin-right: 50px;
+
+}
+
+#topMenu2>li {
+
+	padding: 1px 5px;
+	border-right: 1px solid white;
+
+}
+
+#topMenu2>li:last-child, #menu2 ul li:last-child { /*last-child - seleciona o ultimo elemento; first-child - seleciona o primeiro elemento*/
+
+	border-right: 0;
+
+}
+
+#menuheader {
+
+width: 100%;
+text-align: center;
+
+}
+
+#menuheader li {
+	display: inline-block;
+	color:white;
+	font-weight: bold; /*grossura da fonte*/
+	font-size: 16px;
+	padding: 5px 5px 5px 10px;
+	cursor: pointer;
+}
+
+#menu2{
+
+	width: 100%;
+
+}
+
+#menu2 ul{
+
+	width: 90%;
+	background-color: #95C29B;
+	margin: 3px auto;
+	justify-content: space-between;
+
+}
+#menu2 ul li{
+
+display: inline-block;
+color:white;
+margin: 10px 15px;
+border-right: 1px solid white;
+
+cursor: pointer;
+padding: 0px 40px 0px 20px;
+
+}
+
+#menu2 span{
+
+	width: 90%;
+	color: #808080;
+	font-size: 10px;
+	display: block;
+	margin: 0 auto; /* centraliza elemento no container utilizado junto com display block */
+}
+
+#corpo {
+	width: 100%;
+}
+#corpoCont {
+
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+	 
+
+}
+#corpoCont>ul {
+list-style: none; /* tira as • da lista*/
+display: inline-block;
+
+}
+
+#corpoCont>ul>li{
+
+	background-color: #95C29B;
+	color: white;
+	width: 200px;
+	height:50px;
+	padding-left: 10px;
+	margin-bottom: 3px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+
+}
+
+.active {
+
+	color: black !important;
+	font-weight: bold;
+}
+
+#pagina {
+
+	display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: px;
+    background-color: #F1F2F2;
+
+}
+
+.expand {
+
+	width: 1000px;
+
+	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-right: 30px;
+
+}
+
+.expand .btn{
+
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+	height: 25px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #EB7303;
+	font-size: 16px;
+	
+	
+
+}
+
+.expand .btn span{
+
+	padding-top: 5px;
+	display: inline-block;
+	padding-left: 20px;
+	cursor: pointer;
+
+}
+
+.expand>.cont {
+
+	width: 100%;
+	height: 500px;
+	background-color: #FFFFFF;
+	display: none;
+	font-family: arial;
+	font-size: 15px;
+
+
+}
+
+.expand>.borderb {
+
+	width: 100%;
+	height: 20px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #EB7303;
+
+}
+
+.junto{
+column-span: 0px;
+	
+}
+
+#preto{
+	background-color: #4D4D4D;
+	width: 100%;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	text-align-last:center;
+	padding-top: 20px;
+}
+
+#foot{
+	width:100%;
+	background-color: #848281;
+	height: 350px;
+	margin-top: 200px;
+	box-shadow: inset 0px 10px 70px rgba(0,0,0,0.5); /*cria sombra envolta do container*/
+
+
+}
+
+#foot>ul{
+	cursor: pointer;
+	color: white;
+	font-size: 12px;
+	display: inline-block;
+	padding-left: 150px;
+}
+
+#foot>ul>li{
+
+	list-style: none;
+
+}
+
+#foot>span
+{
+	color: white;
+	font-size: 12px;
+	float: left;
+	margin-top: 300px;
+	margin-left: 10px;
+
+
+}
+
+#foot>#final{
+	color: white;
+	font-size: 12px;
+	float: right;
+	margin-top: 300px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
